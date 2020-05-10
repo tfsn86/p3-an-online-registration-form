@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+.container {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+body {
+	font-family: 'Jost', sans-serif;
+}
+
+header,
+form,
+.input-field,
+.subheader {
+	display: flex;
+	flex-direction: column;
+}
+
+header,
+.subheader {
+	text-align: center;
+}
+
+header {
+	background: #807761;
+	color: #fff;
+}
+
+header h1 {
+	text-transform: uppercase;
+	font-size: 1.6em;
+}
+
+.subheader h2 {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.subheader p {
+	color: #6e6e6e;
+	font-size: 0.9em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 35px;
+	border-bottom: 5px solid black;
+}
+
+section h2:first-of-type {
+	margin-top: 4px;
+	padding-top: 20px;
+	border-top: 1.5px solid black;
+}
