@@ -76,6 +76,14 @@ label {
 	margin-bottom: 5px;
 }
 
-.state-selection {
-	background: red;
+.state-dropdown {
+	background: #e8e8e8;
+	padding: 15px;
+	border-radius: 0.3em;
+	width: 100%;
+	height: auto;
+}
+
+select {
+	color: #adadad;
 }
