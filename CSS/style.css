@@ -46,28 +46,52 @@ header h1 {
 	border-bottom: 5px solid black;
 }
 
-/* Needs more work */
-section h2:first-of-type {
+section h2 {
 	margin-top: 4px;
 	padding-top: 20px;
 	border-top: 1.5px solid black;
 }
 
-input,
-select {
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='submit'],
+select,
+textarea {
 	border: none;
 	padding: 15px;
-	text-align: right;
+	text-align: left;
 	font-size: 0.9em;
 	border-radius: 0.3em;
 	background: #e8e8e8;
-	width: 100%;
 	height: auto;
+	width: 100%;
+}
+
+select {
+	height: 50px;
+}
+
+input,
+select,
+textarea {
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	border-bottom-style: hidden;
+	outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	border: 1.7px solid #0a6882;
 }
 
 input::placeholder {
 	font-style: italic;
 	color: #adadad;
+	text-align: right;
 }
 
 input:last-child {
@@ -89,15 +113,27 @@ p {
 	flex-direction: row;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
-	flex: 1;
-	align-self: center;
-	margin-left: -25px;
-	margin-right: -12px;
+.checkbox-label {
+	margin-left: 10px;
 }
 
-.checkbox {
-	flex: 4;
-	align-self: center;
+textarea {
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+input[type='submit'] {
+	background: #0a6882;
+	color: #fff;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+#copyright {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.9em;
+	color: #adadad;
 }

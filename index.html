@@ -45,7 +45,7 @@
 
 					<div class="input-field">
 						<label for="state">State</label>
-						<select>
+						<select class="a">
 							<option value="" disabled selected>Choose State</option>
 							<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
@@ -115,13 +115,13 @@
 
 					<div class="newsletter-checkbox">
 						<input type="checkbox" name="html-news" id="html-news" />
-						<label class="checkbox" for="html-news">HTML News</label>
+						<label class="checkbox-label" for="html-news">HTML News</label>
 					</div>
 					<br />
 
 					<div class="newsletter-checkbox">
 						<input type="checkbox" name="css-news" id="css-news" />
-						<label class="checkbox" for="css-news">CSS News</label>
+						<label class="checkbox-label" for="css-news">CSS News</label>
 					</div>
 					<br />
 
@@ -131,7 +131,7 @@
 							name="javascript-news"
 							id="javascript-news"
 						/>
-						<label class="checkbox" for="javascript-news"
+						<label class="checkbox-label" for="javascript-news"
 							>JavaScript News</label
 						>
 					</div>
@@ -140,20 +140,22 @@
 					<p>Newsletter format</p>
 					<div class="newsletter-checkbox">
 						<input type="radio" name="html-format" id="#" />
-						<label class="checkbox" for="html-format">HTML</label><br />
+						<label class="checkbox-label" for="html-format">HTML</label><br />
 					</div>
 					<br />
 
 					<div class="newsletter-checkbox">
 						<input type="radio" name="plain-text-format" id="#" />
-						<label class="checkbox" for="plain-text-format">Plain text</label>
+						<label class="checkbox-label" for="plain-text-format"
+							>Plain text</label
+						>
 					</div>
 
 					<p>Other topics you'd like to hear about</p>
-					<textarea name="other-topics" id="#"></textarea>
+					<textarea name="other-topics" rows="4"></textarea>
 					<input type="submit" value="Sign Up" />
 				</section>
-				<div>Copyright The Code Review</div>
+				<div id="copyright">Copyright The Code Review</div>
 			</form>
 		</div>
 	</body>
