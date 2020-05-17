@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
+* {
+	box-sizing: border-box;
+}
+
 .container {
 	margin-left: 15px;
 	margin-right: 15px;
@@ -17,6 +21,17 @@ form,
 	flex-direction: column;
 }
 
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+legend {
+	width: 100%;
+	font-size: 1.5em;
+}
+
 header,
 .subheader {
 	text-align: center;
@@ -32,24 +47,32 @@ header h1 {
 	font-size: 1.6em;
 }
 
-.subheader h2 {
-	margin-top: 20px;
-	margin-bottom: 15px;
-}
-
 .subheader p {
 	color: #6e6e6e;
 	font-size: 0.9em;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 5px;
 	padding-bottom: 35px;
 	border-bottom: 5px solid black;
 }
 
-section h2 {
+fieldset legend {
 	margin-top: 4px;
 	padding-top: 20px;
 	border-top: 1.5px solid black;
+}
+
+.input-field {
+	margin-bottom: 20px;
+}
+
+.input-field:first-of-type {
+	margin-top: 30px;
+}
+
+.input-field input,
+select {
+	margin-top: 7px;
 }
 
 input[type='text'],
@@ -68,8 +91,14 @@ textarea {
 	width: 100%;
 }
 
+#zip {
+	display: inline-block;
+}
+
 select {
-	height: 50px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 input,
@@ -80,6 +109,8 @@ textarea {
 	border-left-style: hidden;
 	border-bottom-style: hidden;
 	outline: none;
+	transition: border 0.15s ease-in-out;
+	width: auto;
 }
 
 input:focus,
@@ -94,18 +125,9 @@ input::placeholder {
 	text-align: right;
 }
 
-input:last-child {
-	margin-bottom: 25px;
-}
-
 label,
 p {
-	color: #adadad;
-}
-
-.input-field label {
-	margin-top: 15px;
-	margin-bottom: 5px;
+	color: #6e6e6e;
 }
 
 .newsletter-checkbox {
@@ -120,6 +142,7 @@ p {
 textarea {
 	text-align: left;
 	margin-bottom: 30px;
+	width: 100%;
 }
 
 input[type='submit'] {
@@ -130,10 +153,38 @@ input[type='submit'] {
 }
 
 #copyright {
-	margin-top: 10px;
+	margin-top: 35px;
 	margin-bottom: 50px;
 	text-align: center;
 	font-style: italic;
 	font-size: 0.9em;
 	color: #adadad;
+}
+
+/* Media Query */
+@media (min-width: 768px) {
+	.container {
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+
+	.input-field {
+		flex-direction: row;
+		margin-bottom: 25px;
+		align-items: center;
+	}
+
+	#zip {
+		display: flex;
+	}
+
+	.input-field label {
+		flex: 1;
+	}
+
+	.input-field input,
+	select {
+		flex: 3.5;
+		margin-top: 0;
+	}
 }

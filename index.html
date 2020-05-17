@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -16,36 +17,41 @@
 				<p>Get the latest news on how your code is doing right in your inbox</p>
 			</div>
 			<form>
-				<section>
-					<h2>Contact information</h2>
+				<fieldset>
+					<legend>Contact information</legend>
 					<div class="input-field">
 						<label for="full-name">Full Name</label>
-						<input type="text" placeholder="Required " /><br />
+						<input
+							required
+							id="full-name"
+							type="text"
+							placeholder="Required "
+						/>
 					</div>
 
 					<div class="input-field">
 						<label for="email">Email Address</label>
-						<input type="email" placeholder="Required " /><br />
+						<input required id="email" type="email" placeholder="Required " />
 					</div>
 
 					<div class="input-field">
 						<label for="phone">Phone Number</label>
-						<input type="number" /><br />
+						<input id="phone" type="number" />
 					</div>
 
 					<div class="input-field">
 						<label for="address">Street Address</label>
-						<input type="text" /><br />
+						<input required id="address" type="text" placeholder="Required " />
 					</div>
 
 					<div class="input-field">
 						<label for="city">City</label>
-						<input type="text" /><br />
+						<input required id="city" type="text" placeholder="Required " />
 					</div>
 
 					<div class="input-field">
 						<label for="state">State</label>
-						<select class="a">
+						<select id="state" name="state">
 							<option value="" disabled selected>Choose State</option>
 							<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
@@ -101,16 +107,13 @@
 						</select>
 					</div>
 
-					<br />
-
-					<div class="input-field">
-						<label for="Zip Code">Zip Code</label>
-						<input type="number" />
+					<div class="input-field" id="zip">
+						<label for="zip-code">Zip Code</label>
+						<input id="zip-code" type="number" />
 					</div>
-				</section>
-
-				<section>
-					<h2>Newsletter</h2>
+				</fieldset>
+				<fieldset>
+					<legend>Newsletter</legend>
 					<p>Select the newsletters you would like to receive</p>
 
 					<div class="newsletter-checkbox">
@@ -139,22 +142,26 @@
 					<br />
 					<p>Newsletter format</p>
 					<div class="newsletter-checkbox">
-						<input type="radio" name="html-format" id="#" />
+						<input type="radio" name="html-format" id="html-format" />
 						<label class="checkbox-label" for="html-format">HTML</label><br />
 					</div>
 					<br />
 
 					<div class="newsletter-checkbox">
-						<input type="radio" name="plain-text-format" id="#" />
+						<input
+							type="radio"
+							name="plain-text-format"
+							id="plain-text-format"
+						/>
 						<label class="checkbox-label" for="plain-text-format"
 							>Plain text</label
 						>
 					</div>
 
 					<p>Other topics you'd like to hear about</p>
-					<textarea name="other-topics" rows="4"></textarea>
-					<input type="submit" value="Sign Up" />
-				</section>
+					<textarea id="other-topics" name="other-topics" rows="4"></textarea>
+					<input id="submit" type="submit" value="Sign Up" />
+				</fieldset>
 				<div id="copyright">Copyright The Code Review</div>
 			</form>
 		</div>
