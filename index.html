@@ -23,6 +23,7 @@
 						<label for="full-name">Full Name</label>
 						<input
 							required
+							name="contact-info"
 							id="full-name"
 							type="text"
 							placeholder="Required "
@@ -31,27 +32,45 @@
 
 					<div class="input-field">
 						<label for="email">Email Address</label>
-						<input required id="email" type="email" placeholder="Required " />
+						<input
+							required
+							name="contact-info"
+							id="email"
+							type="email"
+							placeholder="Required "
+						/>
 					</div>
 
 					<div class="input-field">
 						<label for="phone">Phone Number</label>
-						<input id="phone" type="number" />
+						<input name="contact-info" id="phone" type="tel" />
 					</div>
 
 					<div class="input-field">
 						<label for="address">Street Address</label>
-						<input required id="address" type="text" placeholder="Required " />
+						<input
+							required
+							name="contact-info"
+							id="address"
+							type="text"
+							placeholder="Required "
+						/>
 					</div>
 
 					<div class="input-field">
 						<label for="city">City</label>
-						<input required id="city" type="text" placeholder="Required " />
+						<input
+							required
+							name="contact-info"
+							id="city"
+							type="text"
+							placeholder="Required "
+						/>
 					</div>
 
 					<div class="input-field">
 						<label for="state">State</label>
-						<select id="state" name="state">
+						<select id="state" name="contact-info">
 							<option value="" disabled selected>Choose State</option>
 							<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
@@ -109,7 +128,7 @@
 
 					<div class="input-field" id="zip">
 						<label for="zip-code">Zip Code</label>
-						<input id="zip-code" type="number" />
+						<input name="contact-info" id="zip-code" type="text" />
 					</div>
 				</fieldset>
 				<fieldset>
