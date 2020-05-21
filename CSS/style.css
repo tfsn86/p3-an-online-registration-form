@@ -130,7 +130,8 @@ p {
 	color: #6e6e6e;
 }
 
-.other-topics {
+.other-topics,
+#other-topics {
 	display: inline-block;
 	margin-top: 16px;
 }
