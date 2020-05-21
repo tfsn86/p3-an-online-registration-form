@@ -130,6 +130,11 @@ p {
 	color: #6e6e6e;
 }
 
+#other-topics {
+	display: inline-block;
+	margin-top: 16px;
+}
+
 .newsletter-checkbox {
 	display: flex;
 	flex-direction: row;
